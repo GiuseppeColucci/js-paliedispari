@@ -6,12 +6,12 @@ var utente=prompt('inserisci una parola');
 
 
 
-var p=Pali(utente);
+var palindroma=Pali(utente);
 
 function Pali(text){
     if(text===text.split('').reverse().join('')){
         return alert(text+' questa è una parola palindroma');
-            }
+    }
     
   return alert(text +' questa è una parola non palindroma');
 }
@@ -42,12 +42,8 @@ var risult=NumeroUtente+rand
 var pari='pari'
 var disp='dispari'
 
-var loop=false;
-//controllo
-while(loop===true){
-
     if (utenteGioco!== pari || NumeroUtente>5||NumeroUtente===0){
-        alert('hai inserito degli elementi sbagliati')
+        alert('hai inserito degli elementi sbagliati')  
     }
     else if(utenteGioco===pari && risult%2==0){
         alert("ha vinto l'utnete")
@@ -59,8 +55,6 @@ while(loop===true){
         alert("ha vinto la macchina")
         
     }
- loop===true   
-}
 
 //FUNZIONE 
 function game(min,max){
